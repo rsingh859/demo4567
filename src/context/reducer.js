@@ -24,6 +24,11 @@ const photosReducer = (state = initialState, action) => {
                 ...state,
                 error: action.payload
             }
+        case ActionTypes.ADD_DATA:
+            return {
+                ...state,
+                data: state.data.concat([action.payload])
+            }
         default:
             return state;
     }

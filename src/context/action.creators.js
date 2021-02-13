@@ -13,3 +13,8 @@ export const fetchDataError = errmess => ({
     type: ActionTypes.FETCH_ERROR,
     payload: errmess
 });
+
+export const addToData = data => ({
+    type: ActionTypes.ADD_DATA,
+    payload: data
+});
